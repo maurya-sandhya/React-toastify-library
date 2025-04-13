@@ -6,7 +6,7 @@ import '../../style.css';
 
 const ToastContainer = ({ toasts, onClose }) => {
   return (
-    <div className="custom-margin">
+    <div className="toast-container">
       {toasts.map(toast => (
         <Toast key={toast.id} {...toast} onClose={onClose} />
       ))}

@@ -4,6 +4,7 @@
     padding: 20px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 12px;
     max-width: 300px;
   }
@@ -16,6 +17,8 @@
     color: #fff;
     font-size: 16px;
     cursor: pointer;
+    width: 200px;
+    font-weight: 700;
     transition: background-color 0.3s ease;
   }
   
@@ -43,10 +46,11 @@
   
   .toast-container {
     position: fixed;
-    top: 1rem;
-    right: 1rem;
+    top: 2rem;
+    right: 2rem;
     z-index: 9999;
     width: 320px;
+    /* margin-right: 20px; */
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
@@ -144,8 +148,17 @@
   .button:hover {
     opacity: 0.8;
   }
-  .custom-margin{
+  /* .custom-margin{
     margin-left: 70%;
     margin-top: 0px !important;
+  } */
+  @media (max-width: 640px) {
+    .toast-container {
+      right: 50%;
+      transform: translateX(50%);
+      left: auto;
+      width: 90%;
+      max-width: 320px;
+    }
   }
   
